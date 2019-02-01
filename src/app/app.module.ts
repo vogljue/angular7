@@ -7,11 +7,17 @@ import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppMaterialModule } from './app-material.module';
 import { HeroscoreComponent } from './heroscore/heroscore.component';
+import { DatabindingComponent } from './databinding/databinding.component';
+import { PropertybindingComponent } from './databinding/propertybinding.component';
+import { EventbindingComponent } from './databinding/eventbinding.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeroscoreComponent
+    HeroscoreComponent,
+    DatabindingComponent,
+    PropertybindingComponent,
+    EventbindingComponent
   ],
 imports: [
   BrowserModule,

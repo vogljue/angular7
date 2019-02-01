@@ -1,0 +1,17 @@
+<h4>String Interpolation</h4>
+{{ aString }}
+{{ aNumber }}  
+
+<h4>Property Binding</h4>
+<p [innerText]="aString"></p>
+<div>
+  <mat-form-field appearance="outline">
+    <mat-label>Nummer:</mat-label>
+    <input matInput placeholder="Nummer" [value]="aNumber" >
+  </mat-form-field>
+</div>
+<app-propertybinding [name]="'Juergen'"></app-propertybinding>
+
+<h4>Event Binding</h4>
+<button mat-flat-button (click)="onClick($event)">Klick mich</button>
+<app-eventbinding (clicked)="aString = $event"></app-eventbinding>
