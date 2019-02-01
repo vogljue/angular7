@@ -10,6 +10,7 @@ import { HeroscoreComponent } from './heroscore/heroscore.component';
 import { DatabindingComponent } from './databinding/databinding.component';
 import { PropertybindingComponent } from './databinding/propertybinding.component';
 import { EventbindingComponent } from './databinding/eventbinding.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { EventbindingComponent } from './databinding/eventbinding.component';
     HeroscoreComponent,
     DatabindingComponent,
     PropertybindingComponent,
-    EventbindingComponent
+    EventbindingComponent,
+    DashboardComponent
   ],
 imports: [
   BrowserModule,

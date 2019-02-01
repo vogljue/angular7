@@ -1,17 +1,23 @@
-<h4>String Interpolation</h4>
-{{ aString }}
-{{ aNumber }}  
+<h3 class="mat-h3">String Interpolation</h3>
+<p class="mat-body">{{ aString }}</p>
+<p class="mat-body">{{ aNumber }}</p>
 
-<h4>Property Binding</h4>
-<p [innerText]="aString"></p>
+<h3 class="mat-h3">Property Binding</h3>
+<p class="mat-body" [innerText]="aString"></p>
 <div>
   <mat-form-field appearance="outline">
     <mat-label>Nummer:</mat-label>
-    <input matInput placeholder="Nummer" [value]="aNumber" >
+    <input matInput placeholder="Nummer" [value]="aNumber">
   </mat-form-field>
 </div>
 <app-propertybinding [name]="'Juergen'"></app-propertybinding>
 
-<h4>Event Binding</h4>
+<h3 class="mat-h3">Event Binding</h3>
 <button mat-flat-button (click)="onClick($event)">Klick mich</button>
 <app-eventbinding (clicked)="aString = $event"></app-eventbinding>
+
+<h3 class="mat-h3">Two-Way Binding</h3>
+<mat-form-field appearance="outline">
+  <mat-label>Nummer:</mat-label>
+  <input matInput placeholder="String" [(ngModel)]="aString">
+</mat-form-field>
