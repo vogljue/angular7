@@ -1,0 +1,8 @@
+<div style="width: 300px;">
+<button mat-flat-button color="primary">Neues Rezept</button>
+<mat-grid-list cols="1" rowHeight="500px" gutterSize="10px">
+  <mat-grid-tile>
+    <app-recipe-item [recipe]="recipe" (recipeSelected)="onSelected($event)"></app-recipe-item>
+  </mat-grid-tile>
+</mat-grid-list>
+</div>

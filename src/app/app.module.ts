@@ -10,6 +10,13 @@ import { HeroscoreComponent } from './heroscore/heroscore.component';
 import { DatabindingComponent } from './databinding/databinding.component';
 import { PropertybindingComponent } from './databinding/propertybinding.component';
 import { EventbindingComponent } from './databinding/eventbinding.component';
+import { HeaderComponent } from './header.component';
+import { RecipeComponent } from './recipe/recipe.component';
+import { ShoppingListComponent } from './shopping-list/shopping-list.component';
+import { RecipeListComponent } from './recipe/recipe-list/recipe-list.component';
+import { RecipeDetailComponent } from './recipe/recipe-detail/recipe-detail.component';
+import { RecipeItemComponent } from './recipe/recipe-list/recipe-item.component';
+import { ShoppingListAddComponent } from './shopping-list/shopping-list-add.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +24,14 @@ import { EventbindingComponent } from './databinding/eventbinding.component';
     HeroscoreComponent,
     DatabindingComponent,
     PropertybindingComponent,
-    EventbindingComponent
+    EventbindingComponent,
+    HeaderComponent,
+    RecipeComponent,
+    ShoppingListComponent,
+    RecipeListComponent,
+    RecipeDetailComponent,
+    RecipeItemComponent,
+    ShoppingListAddComponent
   ],
 imports: [
   BrowserModule,

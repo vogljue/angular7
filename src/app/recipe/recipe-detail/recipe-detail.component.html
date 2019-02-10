@@ -1,0 +1,23 @@
+<div class="detail-container">
+<mat-grid-list cols="3" rowHeight="50px" gutterSize="10px">
+  <mat-grid-tile colspan="2">
+    <div class="mat-title grid-align-left">{{selectedRecipe?.name}}</div>
+  </mat-grid-tile>
+  <mat-grid-tile colspan="1" rowspan="3">
+    <img src="{{selectedRecipe?.imagePath}}" width="100px" height="100px" alt="Rezept" />
+  </mat-grid-tile>
+  <mat-grid-tile colspan="2">
+    <div class="mat-body grid-align-left">{{selectedRecipe?.description}}</div>
+  </mat-grid-tile>
+  <mat-grid-tile colspan="2">
+    <div class="button-row  grid-align-left">
+    <button mat-flat-button color="primary">Zur Einkaufsliste</button>
+    <button mat-flat-button color="accent">Bearbeiten</button>
+    <button mat-flat-button color="warn">Loeschen</button>
+    </div>
+  </mat-grid-tile>
+  <mat-grid-tile colspan="3" rowspan="2">
+    <div class="mat-body grid-align-left">Zutaten</div>
+  </mat-grid-tile>
+</mat-grid-list>
+</div>

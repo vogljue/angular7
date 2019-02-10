@@ -1,0 +1,8 @@
+<mat-grid-list cols="3" rowHeight="550px" gutterSize="10px">
+  <mat-grid-tile colspan="1">
+    <app-recipe-list (recipeSelected)="selectedRecipe = $event"></app-recipe-list>
+  </mat-grid-tile>
+  <mat-grid-tile colspan="2">
+    <app-recipe-detail [selectedRecipe]="selectedRecipe"></app-recipe-detail>
+  </mat-grid-tile>
+</mat-grid-list>
