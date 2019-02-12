@@ -5,6 +5,7 @@ import { RecipeDetailComponent } from './recipe/recipe-detail/recipe-detail.comp
 import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { HeroscoreComponent } from './heroscore/heroscore.component';
 import { DatabindingComponent } from './databinding/databinding.component';
+import { DirectivesComponent } from './directives/directives.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 
 const routes: Routes = [
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'shoppinglist', component: ShoppingListComponent },
   { path: 'heroscore', component: HeroscoreComponent },
   { path: 'databinding', component: DatabindingComponent },
+  { path: 'directives', component: DirectivesComponent },
   { path: 'dashboard', component: DashboardComponent },
 ];
 
