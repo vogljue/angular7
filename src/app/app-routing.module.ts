@@ -5,6 +5,7 @@ import { RecipeDetailComponent } from './recipe/recipe-detail/recipe-detail.comp
 import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { HeroscoreComponent } from './heroscore/heroscore.component';
 import { DatabindingComponent } from './databinding/databinding.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/recipe', pathMatch: 'full' },
@@ -13,6 +14,7 @@ const routes: Routes = [
   { path: 'shoppinglist', component: ShoppingListComponent },
   { path: 'heroscore', component: HeroscoreComponent },
   { path: 'databinding', component: DatabindingComponent },
+  { path: 'dashboard', component: DashboardComponent },
 ];
 
 @NgModule({

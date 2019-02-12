@@ -6,6 +6,7 @@ import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppMaterialModule } from './app-material.module';
+import { DashboardComponent } from './dashboard/dashboard.component';
 import { HeroscoreComponent } from './heroscore/heroscore.component';
 import { DatabindingComponent } from './databinding/databinding.component';
 import { PropertybindingComponent } from './databinding/propertybinding.component';
@@ -21,6 +22,7 @@ import { ShoppingListAddComponent } from './shopping-list/shopping-list-add.comp
 @NgModule({
   declarations: [
     AppComponent,
+    DashboardComponent,
     HeroscoreComponent,
     DatabindingComponent,
     PropertybindingComponent,

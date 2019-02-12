@@ -1,27 +1,28 @@
 <form>
-  <mat-grid-list cols="2" rowHeight="100px" gutterSize="10px">
-    <mat-grid-tile>
-      <div class="grid-align-left grid-flex">
+  <div fxLayout="row" fxLayoutAlign="start" fxLayoutGap="10px">
+    <div>
         <mat-form-field appearance="outline">
           <mat-label>Name:</mat-label>
           <input matInput placeholder="Name" id="itemName">
         </mat-form-field>
-      </div>
-    </mat-grid-tile>
-    <mat-grid-tile>
-      <div class="grid-align-left">
+    </div>
+    <div>
       <mat-form-field appearance="outline">
         <mat-label>Anzahl:</mat-label>
         <input matInput placeholder="Anzahl" id="itemAmount">
       </mat-form-field>
-      </div>
-    </mat-grid-tile>
-    <mat-grid-tile colspan="2" class="button-row">
-      <div class="grid-align-left">
+    </div>
+  </div>
+  
+  <div fxLayout="row" fxLayoutAlign="start" fxLayoutGap="10px">
+    <div>
       <button mat-flat-button color="primary">Hinzufuegen</button>
+    </div>
+    <div>
       <button mat-flat-button color="warn">Loeschen</button>
+    </div>
+    <div>
       <button mat-flat-button color="accent">Zuruecksetzen</button>
-      </div>
-    </mat-grid-tile>
-  </mat-grid-list>
+    </div>
+  </div>
 </form>
