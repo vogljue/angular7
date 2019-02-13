@@ -22,7 +22,7 @@ export class HighlightDirective implements OnInit {
   }
   
   // constructor(elRef: ElementRef, renderer: Renderer) { 
-  //  // elRef.nativeElement.style.backgroundColor = 'green';
-  //  renderer.setElementStyle(elRef.nativeElement, 'background-color', 'green');
+  // // elRef.nativeElement.style.backgroundColor = 'green';
+  //   renderer.setElementStyle(elRef.nativeElement, 'background-color', 'green');
   // }
 }

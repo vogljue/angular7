@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DirectivesComponent implements OnInit {
   color = 'red';
+  switch = true;
+  elemente = [1, 2, 3, 4, 5];
+  value = 100;
   
   constructor() { 
   }

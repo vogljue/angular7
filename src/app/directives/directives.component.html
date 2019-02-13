@@ -5,3 +5,23 @@
 
 <h3 class="mat-h3">Custom Attribute Directive</h3>
 <p appHighlight [defaultColor]="'blue'" [highlightColor]="'gray'">Ich bin hervorgehoben</p>
+
+<h2 class="mat-h2">Structural Directives</h2>
+<h3 class="mat-h3">*ngIf Directive</h3>
+<div *ngIf="switch">nicht immer zu sehen</div>
+<button mat-flat-button color="primary" (click)="switch = !switch">Switch</button>
+
+<h3 class="mat-h3">*ngFor Directive</h3>
+<mat-nav-list>
+    <mat-list-item *ngFor="let element of elemente; let i = index">{{element}} (Index:{{i}} )</mat-list-item>
+</mat-nav-list>
+
+<h3 class="mat-h3">*ngSwitch Directive</h3>
+<div [ngSwitch]="value">
+    <p *ngSwitchCase="10">10</p>
+    <p *ngSwitchCase="100">100</p>
+    <p *ngSwitchDefault>sonstiges</p>
+</div>
+
+<h3 class="mat-h3">*Unless Directive</h3>
+<div *appUnless="switch">Ist das zu sehen?</div>
