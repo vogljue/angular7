@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MessageService } from '../message.service';
 
 @Component({
   selector: 'app-databinding',
@@ -9,7 +10,7 @@ export class DatabindingComponent implements OnInit {
   aString = 'Ich bin ein String';
   aNumber = 100;
   
-  constructor() { 
+  constructor(private messageService: MessageService) { 
     setTimeout(() => {
       this.aNumber += 200;
     }, 3000);
@@ -20,6 +21,7 @@ export class DatabindingComponent implements OnInit {
   
   onClick(event: Event) {
     console.log(event);
+    this.messageService.add("onClick event");
   }
 
 }

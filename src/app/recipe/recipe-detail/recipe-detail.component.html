@@ -3,9 +3,9 @@
     <h2 class="mat-h2">{{selectedRecipe?.name}}</h2>
   </div>
   <div fxFlex>
-    <img src="{{selectedRecipe?.imagePath}}" width="100px" height="100px" alt="Rezept" />
+    <img src="{{selectedRecipe?.imagePath}}" width="200px" height="200px" alt="Rezept" />
   </div>
-  <div fxFlex>
+  <div fxFlex class="mat-body">
     {{selectedRecipe?.description}}
   </div>
   <div fxLayout="row" fxLayoutAlign="start" fxLayoutGap="10px">
@@ -19,7 +19,12 @@
       <button mat-flat-button color="warn">Loeschen</button>
     </div>
   </div>
-  <div fxFlex>
+  <div fxFlex class="mat-body">
     Zutaten
+    <mat-list dense>
+      <mat-list-item *ngFor="let ingredient of selectedRecipe?.ingredients">
+        {{ingredient.name}} ({{ingredient.amount}})
+      </mat-list-item>
+    </mat-list>
   </div>
 </div>

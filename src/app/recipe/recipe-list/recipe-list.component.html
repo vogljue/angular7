@@ -3,6 +3,8 @@
     <button mat-flat-button color="primary">Neues Rezept</button>
   </div>
   <div fxFlex>
-    <app-recipe-item [recipe]="recipe" (recipeSelected)="onSelected($event)"></app-recipe-item>
+    <app-recipe-item 
+    *ngFor="let recipe of recipes"
+    [recipe]="recipe" (recipeSelected)="onSelected($event)"></app-recipe-item>
   </div>
 </div>

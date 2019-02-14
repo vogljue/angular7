@@ -3,5 +3,9 @@
 <app-shopping-list-add></app-shopping-list-add>
 
 <mat-nav-list>
-  <a mat-list-item href="..."> Zutat </a>
+  <a mat-list-item 
+  href="..." 
+  *ngFor="let ingredient of ingredients">
+      {{ingredient.name}} ({{ingredient.amount}}) 
+  </a>
 </mat-nav-list>
