@@ -36,7 +36,7 @@ export class HeroscoreComponent implements OnInit {
 
   constructor() { }
 
-  @ViewChild(MatPaginator) paginator: MatPaginator;
+  @ViewChild(MatPaginator, { static: true }) paginator: MatPaginator;
 
   ngOnInit() {
     this.dataSource.paginator = this.paginator;
